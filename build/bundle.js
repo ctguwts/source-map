@@ -16,7 +16,7 @@
   \*********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_math__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/math */ \"./src/utils/math.js\");\n\nvar message = \"hello word\";\nconsole.log(message);\nconsole.log(address);\nvar foo = function foo() {\n  console.log(\"foo function exeC~\");\n};\nfoo();\nconsole.log((0,_utils_math__WEBPACK_IMPORTED_MODULE_0__.add)(20, 30));\nconsole.log((0,_utils_math__WEBPACK_IMPORTED_MODULE_0__.sub)(20, 30));\n\n//# sourceURL=webpack://source_map/./src/main.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _utils_math__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./utils/math */ \"./src/utils/math.js\");\n\nvar message = \"hello word\";\nvar foo = function foo() {\n  console.log(\"foo function exeC~\");\n};\nfoo();\nconsole.log((0,_utils_math__WEBPACK_IMPORTED_MODULE_0__.add)(20, 30));\nconsole.log((0,_utils_math__WEBPACK_IMPORTED_MODULE_0__.sub)(20, 30));\n\n//# sourceURL=webpack://source_map/./src/main.js?");
 
 /***/ }),
 
@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _uti
   \***************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"add\": () => (/* binding */ add),\n/* harmony export */   \"sub\": () => (/* binding */ sub)\n/* harmony export */ });\nfunction add(num1, num2) {\n  return num1 + num2;\n}\nfunction sub(num1, num2) {\n  return num1 - num2;\n}\nconsole.log(count); //此处在utils/math.js中打印，肯定会报错\n\n\n\n//# sourceURL=webpack://source_map/./src/utils/math.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"add\": () => (/* binding */ add),\n/* harmony export */   \"sub\": () => (/* binding */ sub)\n/* harmony export */ });\nfunction add(num1, num2) {\n  return num1 + num2;\n}\nfunction sub(num1, num2) {\n  return num1 - num2;\n}\n\n\n//# sourceURL=webpack://source_map/./src/utils/math.js?");
 
 /***/ })
 

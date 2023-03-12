@@ -1,0 +1,1 @@
+console.log("我是content文件夹下的abc文件")

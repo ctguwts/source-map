@@ -1,9 +1,7 @@
 import { add, sub } from "./utils/math";
 
 const message = "hello word";
-console.log(message);
 
-console.log(address);
 
 const foo = () => {
   console.log("foo function exeC~");

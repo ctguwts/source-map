@@ -1,4 +1,7 @@
 const path = require("path");
+const HtmlWebpackPlugin = require("html-webpack-plugin");
+
+
 module.exports = {
   entry: "./src/main.js",
   mode: "development",
@@ -8,6 +11,12 @@ module.exports = {
     filename: "bundle.js",
     clean: true,
   },
+  resolve:{
+    extensions:['.js','.json','.wasm','.jsx'],
+  },
+  devServer:{
+    static:['content']
+  },
   module: {
     rules: [
       {
@@ -15,14 +24,15 @@ module.exports = {
         use: {
           loader: "babel-loader",
           options: {
-            // plugins: [
-            //   "@babel/plugin-transform-arrow-functions",
-            //   "@babel/plugin-transform-block-scoping",
-            // ],
             presets: ["@babel/preset-env"],
           },
         },
       },
     ],
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: "./public/index.html",
+    }),
+  ],
 };
