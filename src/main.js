@@ -1,13 +1,37 @@
-import { add, sub } from "./utils/math";
+import { foo } from "./utils/foo";
+import { bar } from "./utils/bar";
 
-const message = "hello word";
+import axios from "axios";
+import react from "react";
 
+//main.js作为入口
+const message = "Hello main";
+console.log(message);
+foo();
+bar();
 
-const foo = () => {
-  console.log("foo function exeC~");
+const btn1 = document.createElement("button");
+const btn2 = document.createElement("button");
+btn1.textContent = "category";
+btn2.textContent = "about";
+
+document.body.append(btn1);
+document.body.append(btn2);
+
+btn1.onclick = () => {
+  import(
+    /* webpackChunkName:"category" */
+    /* webpackPrefetch: true */
+    "./router/category"
+  );
 };
 
-foo();
+btn2.onclick = () => {
+  import(
+    /* webpackChunkName:"about" */
+    /* webpackPreload: true */
+    "./router/about"
+  );
+};
 
-console.log(add(20, 30));
-console.log(sub(20, 30));
+axios.get("127.0.0.1");
