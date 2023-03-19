@@ -2,9 +2,9 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/main.js",
+  entry: "./src/terserMain.js",
 
-  mode: "development",
+  mode: "production",
   // devtool: "source-map",
   output: {
     path: path.resolve(__dirname, "./build"),

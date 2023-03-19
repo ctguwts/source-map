@@ -24,6 +24,7 @@
     "core-js": "^3.29.0",
     "html-webpack-plugin": "^5.5.0",
     "regenerator-runtime": "^0.13.11",
+    "terser": "^5.16.6",
     "webpack-dev-server": "^4.11.1"
   }
 }
